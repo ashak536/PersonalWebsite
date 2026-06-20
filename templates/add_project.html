@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block title %}Add Project{% endblock %} {% block
+content %}
+<h1>Add a Project</h1>
+<form method="POST" class="form">
+  <label>Name</label>
+  <input type="text" name="name" required />
+
+  <label>Description</label>
+  <textarea name="description" rows="4" required></textarea>
+
+  <label>GitHub URL (optional)</label>
+  <input type="url" name="url" />
+
+  <button type="submit" class="btn">Save Project</button>
+  <a href="/projects">Cancel</a>
+</form>
+{% endblock %}
